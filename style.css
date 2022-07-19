@@ -181,7 +181,7 @@ h3 {
   display: inline-block;
   margin-block-start: 0px;
   margin-block-end: 0px;
-  color: gray;
+  color: var(--colorTextSubTitle);
   font-size: 12px;
 }
 
@@ -219,6 +219,7 @@ h3 {
   align-items: center;
   justify-content: right;
   margin-right: 15px;
+  margin-top: 15px;
 }
 .theme-switch {
   display: inline-block;
@@ -272,4 +273,19 @@ input:checked + .slider:before {
 [data-theme="dark"] {
   --background: #0d0d14;
   --colorText: white;
+  --colorTextSubTitle: #d3d3dd; 
+  --isDark: hidden;
+}
+
+[data-theme="light"] {
+  --colorTextSubTitle: gray;
+  --isLight: hidden;
+}
+
+#sunsIcon{
+  visibility: var(--isDark);
+}
+
+#moonIcon{
+  visibility: var(--isLight);
 }
