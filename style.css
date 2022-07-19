@@ -1,6 +1,12 @@
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: var(--background);
+  color: var(--colorText);
+}
+
 #titleName {
   font-size: 100px;
-  font-family: Arial, Helvetica, sans-serif;
   margin-bottom: 0;
   margin-block-end: 0px;
   justify-content: center;
@@ -8,12 +14,10 @@
 
 #actualPosition {
   font-size: 30px;
-  font-family: Arial, Helvetica, sans-serif;
 }
 
 #titleExperience {
   font-size: 2.4em;
-  font-family: Arial, Helvetica, sans-serif;
 }
 
 #iconAndroid {
@@ -146,7 +150,6 @@ styleDarkMode {
 }
 
 h3 {
-  font-family: Arial, Helvetica, sans-serif;
   margin-block-start: 0px;
   margin-block-end: 0px;
 }
@@ -168,7 +171,6 @@ h3 {
 }
 
 .subTitleExperience {
-  font-family: Arial, Helvetica, sans-serif;
   display: inline-block;
   margin-block-start: 0px;
   margin-block-end: 0px;
@@ -176,7 +178,6 @@ h3 {
 }
 
 .subTitleExperienceTime {
-  font-family: Arial, Helvetica, sans-serif;
   display: inline-block;
   margin-block-start: 0px;
   margin-block-end: 0px;
@@ -185,13 +186,11 @@ h3 {
 }
 
 .descriptionExperience {
-  font-family: Arial, Helvetica, sans-serif;
   margin-block-start: 4px;
   margin-block-end: 0px;
 }
 
 #listExperience{
-  font-family: Arial, Helvetica, sans-serif;
   margin-left: 65px;
 }
 
@@ -212,4 +211,65 @@ h3 {
 
 #divTitle{
   text-align: center;
+}
+
+/*-----Switch DarkMode------ */
+.theme-switch-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: right;
+  margin-right: 15px;
+}
+.theme-switch {
+  display: inline-block;
+  height: 34px;
+  position: relative;
+  width: 60px;
+}
+
+.theme-switch input {
+  display:none;
+}
+
+.slider {
+  background-color: #ccc;
+  bottom: 0;
+  cursor: pointer;
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+  transition: .4s;
+}
+
+.slider:before {
+  background-color: #fff;
+  bottom: 4px;
+  content: "";
+  height: 26px;
+  left: 4px;
+  position: absolute;
+  transition: .4s;
+  width: 26px;
+}
+
+input:checked + .slider {
+  background-color: #2bb673;
+}
+
+input:checked + .slider:before {
+  transform: translateX(26px);
+}
+
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+/*-----Switch DarkMode------ */
+[data-theme="dark"] {
+  --background: #0d0d14;
+  --colorText: white;
 }
