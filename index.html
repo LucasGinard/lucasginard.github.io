@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,6 +9,7 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <title>LucasGinard</title>
 </head>
+
 <body>
     <header>
         <div class="theme-switch-wrapper">
@@ -15,8 +17,8 @@
             <label class="theme-switch" for="checkbox">
                 <input type="checkbox" id="checkbox" />
                 <div class="slider round"></div>
-          </label>
-          <span id="moonIcon" class="material-icons">brightness_3</span>
+            </label>
+            <span id="moonIcon" class="material-icons">brightness_3</span>
         </div>
     </header>
     <section class="sectionCenter">
@@ -27,7 +29,8 @@
                 <h2 id="actualPosition">Android Developer</h2>
             </div>
             <div id="containerButtons">
-                <a href='https://drive.google.com/file/d/1RPESJR0QwyGhO-CG1H8atrambMHWuzRG/view' class='btnPdf' title='cvLucasGinard'  target='_blank' type='application/pdf'>
+                <a href='https://drive.google.com/file/d/1RPESJR0QwyGhO-CG1H8atrambMHWuzRG/view' class='btnPdf'
+                    title='cvLucasGinard' target='_blank' type='application/pdf'>
                     <button class="bn632-hover bn22">Download CV</button>
                 </a>
                 <a href="https://www.linkedin.com/in/lucasginard/" target="_blank">
@@ -36,7 +39,7 @@
             </div>
         </div>
     </section>
-    <section class="sectionCenter">
+    <section class="sectionCenterDefault">
         <div>
             <h2 class="elementCenter" id="titleExperience">Experience</h2>
             <div class="containerPosition">
@@ -44,9 +47,11 @@
                 <div>
                     <h3>Android Developer</h3>
                     <div>
-                        <p class="subTitleExperience"><b><a href="https://www.roshka.com" target="_blank">Roshka S.A</a></b></p>
+                        <p class="subTitleExperience"><b><a href="https://www.roshka.com" target="_blank">Roshka
+                                    S.A</a></b></p>
                         <p class="subTitleExperienceTime">20-October-2020 - Present</p>
-                        <p class="descriptionExperience">Worked in the IT support area providing hardware and software solutions to both colleagues and customers.
+                        <p class="descriptionExperience">Worked in the IT support area providing hardware and software
+                            solutions to both colleagues and customers.
                         </p>
                     </div>
                 </div>
@@ -74,34 +79,41 @@
                         <p class="subTitleExperience">Logi S.A</p>
                         <p class="subTitleExperienceTime">14-February-2019 - 14-March-2020</p>
                         <p class="descriptionExperience">
-                            Worked in the IT support area providing hardware and software solutions to both colleagues and customers.
+                            Worked in the IT support area providing hardware and software solutions to both colleagues
+                            and customers.
                         </p>
-                    </div>
                 </div>
             </div>
-        </div>        
+        </div>
+        </div>
     </section>
-    <script>
-    const toggleSwitch = document.querySelector('.theme-switch input[type="checkbox"]');
-    function switchTheme(e) {
-        if (e.target.checked) {
-            document.documentElement.setAttribute('data-theme', 'dark');
-            localStorage.setItem('theme', 'dark');
-        }else {
-            document.documentElement.setAttribute('data-theme', 'light');
-            localStorage.setItem('theme', 'light');
-        }
-    }
-    const currentTheme = localStorage.getItem('theme') ? localStorage.getItem('theme') : null;
-
-    if (currentTheme) {
-        document.documentElement.setAttribute('data-theme', currentTheme);
-        if (currentTheme === 'dark') {
-            toggleSwitch.checked = true;
-        }
-    }
-    toggleSwitch.addEventListener('change', switchTheme, false);
-
-    </script>
+    <section class="sectionCenterDefault">
+        <div>
+            <h2 class="elementCenter" id="titleProjectPersonal">Personal Projects</h2>
+            <div>
+                <div class="containerPosition">
+                    <div>
+                        <h3>AireLibre calidad del aire🇵🇾</h3>
+                        <p class="descriptionExperience">
+                            🍃AireLibre es una respuesta de la comunidad a la necesidad de saber
+sobre la calidad del aire de manera libre, colaborativa y descentralizada🍃.
+                        </p>
+                    </div>
+                <img class="iconProjects" src="images/iconAireLibre.png" />
+                </div>
+                <div class="containerPosition">
+                    <div>
+                        <h3>DolarPY</h3>
+                        <p class="descriptionExperience">
+                            💸Obtén la cotización del dólar en guaraníes en mas de 10 locales.💸
+                        </p>
+                    </div>
+                    <img class="iconProjects" src="images/iconDolarPy.webp" />
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="js/themeMode.js"></script>
 </body>
+
 </html>
