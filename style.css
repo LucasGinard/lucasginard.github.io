@@ -32,6 +32,14 @@ body {
   margin-bottom: 8px;
 }
 
+#iconApple {
+  float: left;
+  height: 55px;
+  width: 55px;
+  margin-right: 5px;
+  margin-bottom: 8px;
+}
+
 .containerPosition {
   display: flex;
   justify-content: center;
