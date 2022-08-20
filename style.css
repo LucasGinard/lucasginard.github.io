@@ -229,6 +229,8 @@ h3 {
   align-items: left;
   margin-top: 12px;
   margin-left: 90px;
+  text-align: center;
+  align-items: center;
 }
 
 #divTitle{
@@ -402,4 +404,10 @@ footer{
   align-items: center;
   text-align: center;
   color: white;
+}
+
+.subTitleExp{
+  padding-right: 8px;
+  min-width: 60px;
+  text-align: left;
 }
