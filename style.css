@@ -411,3 +411,8 @@ footer{
   min-width: 60px;
   text-align: left;
 }
+
+#licenseFooter{
+  color: white;
+  text-decoration: none;
+}
