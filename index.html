@@ -21,6 +21,14 @@
             </label>
             <span id="moonIcon" class="material-icons">brightness_3</span>
         </div>
+        <div class="theme-switch-wrapper">
+            <span>ENG</span>
+            <label class="theme-switch-language" for="checkbox2">
+                <input type="checkbox" id="checkbox2" />
+                <div class="slider round"></div>
+            </label>
+            <span>ESP</span>
+        </div>
     </header>
     <section class="sectionCenter">
         <div id="divTitle">
@@ -53,7 +61,7 @@
                         <p class="subTitleExperience"><b>
                                 <a class="links" href="https://www.roshka.com" target="_blank">Roshka S.A</a></b></p>
                         <p id="timePassRoshka" class="subTitleExperienceTime">20-October-2020 - Present</p>
-                        <p class="descriptionExperience">
+                        <p id="descriptionRoshka" class="descriptionExperience">
                             I'm working on Roshka in Android Native with Kotlin/Java and iOS Native with Swift, implementing flows and
                             redesigns, improving user experience, using Rest services, improving security with dexguard
                             and encrypting sensitive information.
@@ -96,7 +104,7 @@
                     <div">
                         <p class="subTitleExperience">Logi S.A</p>
                         <p id="timePassLogi" class="subTitleExperienceTime">14-February-2019 - 14-March-2020</p>
-                        <p class="descriptionExperience">
+                        <p id="descriptionLogi" class="descriptionExperience">
                             Worked in the IT support area providing hardware and software solutions to both colleagues
                             and customers.
                         </p>
@@ -193,8 +201,8 @@
         </div>
     </section>
     <Footer>
-        <h4>Contact me: contactolucasginard@gmail.com</h4>
-        <h4>Networks</h4>
+        <h4 id="EmailFooter">Contact me: contactolucasginard@gmail.com</h4>
+        <h4 id="NetworksFooter">Networks</h4>
         <div class="containerPosition">
             <a href="https://www.linkedin.com/in/lucasginard/" target="_blank">
                 <img class="iconBasic" src="images/icon_linkedin.svg" alt="goWeb">
@@ -206,13 +214,14 @@
                 <img class="iconBasic" src="images/icon_playstore.svg" alt="repoPortfolio">
             </a>
         </div>
-        <p>Made in Paraguay🇵🇾</p>
+        <p id="MadePY">Made in Paraguay🇵🇾</p>
         <a id="licenseFooter" href="https://github.com/LucasGinard/lucasginard.github.io" target="_blank">
             <p>📜Apache-2.0 license</p>
         </a>
     </Footer>
     <script src="js/themeMode.js"></script>
     <script src="js/calculateDatePass.js"></script>
+    <script src="js/language.js"></script>
 </body>
 
 </html>
