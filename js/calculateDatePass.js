@@ -1,5 +1,16 @@
 function calculateDatePass(start,end = new Date()) {
-    var datePass = end - start
+    var yearDescription = "year";
+    var yearsDescription = "years";
+    var monthsDescription = "moths";
+    if(window.location.hash) {
+        if (window.location.hash == "#es") {
+            yearDescription = "año";
+            yearsDescription = "años";
+            monthsDescription = "meses";
+        }
+    }
+
+    var datePass = end - start;
     var segs = 1000;
     var mins = segs * 60;
     var hours = mins * 60;
@@ -9,19 +20,13 @@ function calculateDatePass(start,end = new Date()) {
 
     var yearInput = Math.floor(datePass / years);
     datePass = datePass - (yearInput * years);
-    var moths = Math.floor(datePass / monthsBase)
-    let titleYear = "years"
-    if(yearInput < 2) titleYear = "year";
+    var moths = Math.floor(datePass / monthsBase);
+    let titleYear = yearsDescription;
+    if(yearInput < 2) titleYear = yearDescription;
 
     if(moths != 0){
-        return ` · ${yearInput} ${titleYear} ${moths} months`
+        return ` · ${yearInput} ${titleYear} ${moths} ${monthsDescription}`;
     }else{
-        return ` · ${yearInput} ${titleYear}`
+        return ` · ${yearInput} ${titleYear}`;
     }
 }
-
-let timePassLogi = calculateDatePass(new Date(2019, 1, 14),new Date(2020, 2, 14))
-document.getElementById("timePassLogi").textContent += timePassLogi
-
-let timePassRoshka = calculateDatePass(new Date(2020, 9, 20))
-document.getElementById("timePassRoshka").textContent += timePassRoshka

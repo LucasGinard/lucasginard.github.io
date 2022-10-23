@@ -22,12 +22,17 @@
             <span id="moonIcon" class="material-icons">brightness_3</span>
         </div>
         <div class="theme-switch-wrapper">
-            <span>ENG</span>
-            <label class="theme-switch-language" for="checkbox2">
-                <input type="checkbox" id="checkbox2" />
-                <div class="slider round"></div>
-            </label>
-            <span>ESP</span>
+            <ul id='custom-select'>
+                <li class="dropdown">
+                  <a id="titleLanguage" href="#" data-toggle="dropdown">English
+                    <i class="icon-arrow close"></i>
+                  </a>
+                  <ul class="dropdown-menu hide">
+                    <li id="listEng"><a href="#" data-optValue="English">English</a></li>
+                    <li id="listSpa"><a href="#" data-optValue="Spanish">Spanish</a></li>
+                    </ul>
+                </li>
+              </ul>
         </div>
     </header>
     <section class="sectionCenter">
@@ -125,12 +130,12 @@
                                 <img class="iconProjects" src="images/iconAireLibre.png" />
                                 <h4 class="card-title mt-3">AireLibre calidad del aire🇵🇾</h4>
                             </div>
-                            <p class="descriptionPersonalProjects">AireLibre is a community response to the need to know
+                            <p id="descriptionAireLibre" class="descriptionPersonalProjects">AireLibre is a community response to the need to know
                                 about air quality in a free, collaborative and decentralized way. Application based on
                                 the web airelib.re.com, made with Kotlin and Compose applying the MVVM architecture.
                             </p>
                             <div class="containerPosition">
-                                <p>Available in:</p>
+                                <p class="textAvailableClass">Available in:</p>
                                 <a href="https://play.google.com/store/apps/details?id=com.lucasginard.airelibre"
                                     target="_blank">
                                     <img class="iconBasic" src="images/iconPlayStore.webp" alt="PlayStoreAireLibre">
@@ -150,12 +155,12 @@
                                 <img class="iconProjects" src="images/iconDolarPy.webp" />
                                 <h4 class="card-title mt-3">DolarPY</h4>
                             </div>
-                            <p class="descriptionPersonalProjects">
+                            <p id="descriptionDolar" class="descriptionPersonalProjects">
                                 Obtain the dollar exchange rate in guaraníes in more than 10 locations. Obtaining the
                                 information from a webService, based on the web: dolar.melizeche.com.
                                 Application made with kotlin applying MVVM architecture. </p>
                             <div class="containerPosition">
-                                <p id="textAvailable">Available in:</p>
+                                <p class="textAvailableClass" id="textAvailable">Available in:</p>
                                 <a href="https://play.google.com/store/apps/details?id=com.lucasginard.dolarpy"
                                     target="_blank">
                                     <img class="iconBasic" src="images/iconPlayStore.webp" alt="playStoreDolarPy">
@@ -180,12 +185,12 @@
                                 <img id="iconProjectEmoji" src="images/iconPortfolio.png" />
                                 <h4 class="card-title mt-3">Lucas Ginard</h4>
                             </div>
-                            <p class="descriptionPersonalProjects">
+                            <p id="descriptionPortfolio" class="descriptionPersonalProjects">
                                 Portfolio web made with Html,Css and javascript vanilla
                             </p>
 
                             <div class="containerPosition">
-                                <p>Available in:</p>
+                                <p class="textAvailableClass">Available in:</p>
                                 <a href="https://lucasginard.com" target="_blank">
                                     <img class="iconBasic" src="images/iconWeb.svg" alt="goWeb">
                                 </a>
@@ -222,6 +227,7 @@
     <script src="js/themeMode.js"></script>
     <script src="js/calculateDatePass.js"></script>
     <script src="js/language.js"></script>
+    <script src="js/dropDownMenuLanguage.js"></script>
 </body>
 
 </html>
