@@ -31,13 +31,13 @@ var language = {
     descriptionRoshka: "Trabajo en Roshka como desarrollador móvil con Kotlin/Java para Android nativo y Swift para iOS nativo, implementandos flujos y rediseños, mejorando la experencia del usuario consumiendo servicios Rest mejorando la seguridad con dexguard e informacion sensible",
     descriptionLogi: "Trabajé en el área de soporte de TI brindando soluciones de hardware y software tanto a colegas como a clientes.",
     titleExperience: "Experiencia",
-    titleProjectPersonal: " Proyectos Personales",
+    titleProjectPersonal: " Proyectos Propios",
     emailFooter: "Contáctame: contactolucasginard@gmail.com",
     NetworksFooter: "Redes",
     MadePY: "Hecho en Paraguay🇵🇾",
     descriptionPortfolio: "Portafolio web realizado con Html,Css y javascript",
     descriptionAireLibre: "AireLibre es una respuesta comunitaria a la necesidad de conocer la calidad del aire de forma libre, colaborativa y descentralizada. Aplicación basada en la web airelib.re.com, realizada con Kotlin y Compose aplicando la arquitectura MVVM",
-    descriptionDolar: "Obtener el tipo de cambio del dólar en guaraníes en más de 10 localidades. Obtención de la información desde un webService, basado en la web: dolar.melizeche.com. Aplicación realizada con kotlin aplicando la arquitectura MVVM",
+    descriptionDolar: "Obtener el cambio del dólar en guaraníes en más de 10 localidades. Obtención de la información desde un webService, basado en la web: dolar.melizeche.com. Aplicación realizada con kotlin aplicando la arquitectura MVVM",
     textAvailable:"Disponible:",
     timePassRoshka:"20-Octubre-2020 - Presente",
     timePassLogi:"14-Febrero-2019 - 14-Marzo-2020",
@@ -63,7 +63,6 @@ if (window.location.hash) {
     document.getElementById("timePassRoshka").textContent  = language.es.timePassRoshka;
     document.getElementById("timePassLogi").textContent  = language.es.timePassLogi;
     
-    toggleSwitch2.checked = true
   } else if (window.location.hash == "#eng") {
     descriptionRoshka.textContent = language.eng.descriptionRoshka;
     descriptionLogi.textContent = language.eng.descriptionLogi;

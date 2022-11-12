@@ -14,25 +14,16 @@
 <body>
     <header>
         <div class="theme-switch-wrapper">
+            <div id="containerLanguage">
+                <img class="english" href="#english" src="https://flagicons.lipis.dev/flags/4x3/us.svg" width="30" onclick="document.body.className='es'">
+                <img class="esp" href="#esp" src="https://flagicons.lipis.dev/flags/4x3/es.svg" width="30" onclick="document.body.className='en'">
+            </div>
             <span id="sunsIcon" class="material-icons">brightness_high</span>
             <label class="theme-switch" for="checkbox">
                 <input type="checkbox" id="checkbox" />
                 <div class="slider round"></div>
             </label>
             <span id="moonIcon" class="material-icons">brightness_3</span>
-        </div>
-        <div class="theme-switch-wrapper">
-            <ul id='custom-select'>
-                <li class="dropdown">
-                  <a id="titleLanguage" href="#" data-toggle="dropdown">English
-                    <i class="icon-arrow close"></i>
-                  </a>
-                  <ul class="dropdown-menu hide">
-                    <li id="listEng"><a href="#" data-optValue="English">English</a></li>
-                    <li id="listSpa"><a href="#" data-optValue="Spanish">Spanish</a></li>
-                    </ul>
-                </li>
-              </ul>
         </div>
     </header>
     <section class="sectionCenter">
@@ -227,7 +218,7 @@
     <script src="js/themeMode.js"></script>
     <script src="js/calculateDatePass.js"></script>
     <script src="js/language.js"></script>
-    <script src="js/dropDownMenuLanguage.js"></script>
+    <script src="js/listenersBtnsLanguages.js"></script>
 </body>
 
 </html>
