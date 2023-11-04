@@ -81,9 +81,10 @@ if (window.location.hash) {
     document.getElementById("timePassRoshka").textContent  = language.eng.timePassRoshka;
     document.getElementById("timePassLogi").textContent.textContent  = language.eng.timePassLogi;
   }
-  let timePassLogi = calculateDatePass(new Date(2019, 1, 14),new Date(2020, 2, 14))
+}
+
+let timePassLogi = calculateDatePass(new Date(2019, 1, 14),new Date(2020, 2, 14))
 document.getElementById("timePassLogi").textContent += timePassLogi
 
 let timePassRoshka = calculateDatePass(new Date(2020, 9, 20))
 document.getElementById("timePassRoshka").textContent += timePassRoshka
-}
